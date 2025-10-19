@@ -605,7 +605,7 @@ export default function Home() {
         </p>
         <ul className="list-disc ml-6 text-slate-700 mb-4">
           <li>
-            <strong>Retake low-grade classes</strong> if allowed,  replacing a D
+            <strong>Retake low-grade classes</strong> if allowed, replacing a D
             or F can significantly raise your average.
           </li>
           <li>
@@ -613,7 +613,7 @@ export default function Home() {
             clarify difficult topics early.
           </li>
           <li>
-            <strong>Balance your course load</strong> each semester,  mix
+            <strong>Balance your course load</strong> each semester, mix
             challenging and moderate classes to avoid burnout.
           </li>
           <li>
@@ -626,10 +626,11 @@ export default function Home() {
           </li>
         </ul>
         <p className="text-slate-700 mb-4">
-          Even small GPA increases, like moving from a 3.3 to a 3.5, can open new
-          doors to merit-based scholarships, graduate programs, or internship
-          eligibility. Regularly monitoring your GPA with this tool helps you
-          stay proactive instead of reactive about your academic goals.
+          Even small GPA increases, like moving from a 3.3 to a 3.5, can open
+          new doors to merit-based scholarships, graduate programs, or
+          internship eligibility. Regularly monitoring your GPA with this tool
+          helps you stay proactive instead of reactive about your academic
+          goals.
         </p>
 
         <h3 className="text-2xl font-semibold mt-10 mb-4 text-slate-900">
@@ -703,11 +704,11 @@ export default function Home() {
           Academic success isn’t just about grades, it’s about strategy. Check
           out our related calculators like the{" "}
           <a href="/" className="text-sky-600 hover:underline">
-            Final Grade Calculator
+            Final Grade Calculator{" "}
           </a>
           and{" "}
           <a href="/" className="text-sky-600 hover:underline">
-            Study Time Planner
+            Study Time Planner{" "}
           </a>
           to manage your workload more effectively. Use them alongside this GPA
           calculator to build consistent study habits, plan semesters ahead, and
