@@ -1,4 +1,65 @@
 import { useState, useEffect } from "react";
+import type { Route } from "./+types/home";
+
+export const meta: Route.MetaFunction = () => [
+  {
+    title:
+      "GPA Calculator – Weighted, Unweighted & Cumulative | Free Online Tool",
+  },
+  {
+    name: "description",
+    content:
+      "Free GPA Calculator for high school and college. Instantly compute weighted, unweighted, and cumulative GPA across semesters. Save progress and track results in real time.",
+  },
+  {
+    name: "keywords",
+    content:
+      "GPA calculator, weighted GPA, unweighted GPA, cumulative GPA, semester GPA, high school GPA calculator, college GPA calculator, AP GPA, honors GPA, GPA tracker, GPA planner",
+  },
+  { name: "robots", content: "index,follow" },
+  { name: "author", content: "AllGpaCalculators.com" },
+  { name: "theme-color", content: "#f9fafb" },
+
+  // --- Open Graph / Facebook ---
+  { property: "og:type", content: "website" },
+  {
+    property: "og:title",
+    content:
+      "Free GPA Calculator – Weighted, Unweighted & Cumulative GPA Tracker",
+  },
+  {
+    property: "og:description",
+    content:
+      "Calculate your GPA instantly with this free weighted and unweighted GPA calculator. Add semesters, set credits, and view your cumulative GPA in real time.",
+  },
+  { property: "og:url", content: "https://allgpacalculators.com/" },
+  { property: "og:site_name", content: "All GPA Calculators" },
+  {
+    property: "og:image",
+    content: "https://allgpacalculators.com/og-image.jpg",
+  },
+
+  // --- Twitter ---
+  { name: "twitter:card", content: "summary_large_image" },
+  {
+    name: "twitter:title",
+    content:
+      "Free GPA Calculator – Weighted & Unweighted | Cumulative GPA Tool",
+  },
+  {
+    name: "twitter:description",
+    content:
+      "Compute your GPA online in seconds. Supports weighted, unweighted, and cumulative calculations. Perfect for students and parents.",
+  },
+  {
+    name: "twitter:image",
+    content: "https://allgpacalculators.com/og-image.jpg",
+  },
+  { name: "twitter:site", content: "@AllGpaCalculators" },
+
+  // --- Canonical ---
+  { tagName: "link", rel: "canonical", href: "https://allgpacalculators.com/" },
+];
 
 export default function Home() {
   // ---------- helpers ----------
