@@ -56,6 +56,7 @@ export const meta: Route.MetaFunction = () => [
     content: "https://allgpacalculators.com/og-image.jpg",
   },
   { name: "twitter:site", content: "@AllGpaCalculators" },
+  { rel: "canonical", href: "https://allgpacalculators.com/" },
 ];
 
 export default function Home() {
