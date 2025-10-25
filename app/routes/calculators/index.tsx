@@ -32,7 +32,7 @@ export const meta: Route.MetaFunction = () => [
     content: "https://allgpacalculators.com/og-image.jpg",
   },
   { name: "twitter:card", content: "summary_large_image" },
-  { rel: "canonical", href: "https://allgpacalculators.com/calculators/" },
+  { rel: "canonical", href: "https://allgpacalculators.com/calculators" },
 ];
 
 export default function CalculatorsLanding() {

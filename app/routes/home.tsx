@@ -32,7 +32,7 @@ export const meta: Route.MetaFunction = () => [
     content:
       "Calculate your GPA instantly with this free weighted and unweighted GPA calculator. Add semesters, set credits, and view your cumulative GPA in real time.",
   },
-  { property: "og:url", content: "https://allgpacalculators.com/" },
+  { property: "og:url", content: "https://allgpacalculators.com" },
   { property: "og:site_name", content: "All GPA Calculators" },
   {
     property: "og:image",
@@ -56,7 +56,7 @@ export const meta: Route.MetaFunction = () => [
     content: "https://allgpacalculators.com/og-image.jpg",
   },
   { name: "twitter:site", content: "@AllGpaCalculators" },
-  { rel: "canonical", href: "https://allgpacalculators.com/" },
+  { rel: "canonical", href: "https://allgpacalculators.com" },
 ];
 
 export default function Home() {
