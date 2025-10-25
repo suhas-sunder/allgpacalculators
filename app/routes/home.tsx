@@ -56,9 +56,6 @@ export const meta: Route.MetaFunction = () => [
     content: "https://allgpacalculators.com/og-image.jpg",
   },
   { name: "twitter:site", content: "@AllGpaCalculators" },
-
-  // --- Canonical ---
-  { tagName: "link", rel: "canonical", href: "https://allgpacalculators.com/" },
 ];
 
 export default function Home() {
@@ -333,6 +330,7 @@ export default function Home() {
             All GPA Calculators
           </h1>
           <div className="hidden sm:flex gap-6 text-slate-700 text-sm font-medium">
+            <a href="/calculators">Calculators</a>
             <a href="#calculator" onClick={(e) => scrollToId(e, "calculator")}>
               Calculator
             </a>
@@ -596,7 +594,7 @@ export default function Home() {
           ].map((name) => (
             <a
               key={name}
-              href="/"
+              href="/calculators"
               className="block border border-slate-200 rounded-xl p-6 hover:shadow-md transition text-center text-slate-700 font-medium"
             >
               {name}
@@ -764,17 +762,94 @@ export default function Home() {
         <p className="text-slate-700 mb-4">
           Academic success isn’t just about grades, it’s about strategy. Check
           out our related calculators like the{" "}
-          <a href="/" className="text-sky-600 hover:underline">
+          <a href="/calculators" className="text-sky-600 hover:underline">
             Final Grade Calculator{" "}
           </a>
           and{" "}
-          <a href="/" className="text-sky-600 hover:underline">
+          <a href="/calculators" className="text-sky-600 hover:underline">
             Study Time Planner{" "}
           </a>
           to manage your workload more effectively. Use them alongside this GPA
           calculator to build consistent study habits, plan semesters ahead, and
           stay motivated throughout your academic journey.
         </p>
+      </section>
+
+      {/* Cross-Site Learning Links */}
+      <section className="max-w-6xl mx-auto px-6 py-16 border-t border-slate-200">
+        <h2 className="text-2xl font-bold text-slate-900 text-center">
+          More Tools and Learning Sites
+        </h2>
+        <p className="mt-2 text-slate-700 text-center max-w-2xl mx-auto">
+          Explore related tools and learning resources to improve your skills in
+          academics, finance, typing, word games, fitness, and creativity.
+        </p>
+
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            {
+              title: "iLoveGPACalculator.com",
+              desc: "Grade-tracking tips, study improvement guides, and student lifestyle planning.",
+              href: "https://ilovegpacalculator.com/",
+            },
+            {
+              title: "MorseWords.com",
+              desc: "Learn Morse code with audio, translators, and fun challenges.",
+              href: "https://morsewords.com/",
+            },
+            {
+              title: "FreeTypingCamp.com",
+              desc: "Typing lessons and tests with progress tracking and mini-games.",
+              href: "https://freetypingcamp.com/",
+            },
+            {
+              title: "iLoveHabits.com",
+              desc: "Daily habit tracking with practical routines for productivity and health.",
+              href: "https://ilovehabits.com/",
+            },
+            {
+              title: "LearnWordGames.com",
+              desc: "Guides, rules, and skill boosters for popular word games.",
+              href: "https://learnwordgames.com/",
+            },
+            {
+              title: "iLoveSteps.com",
+              desc: "Walking and step goals with health benefits and simple training ideas.",
+              href: "https://ilovesteps.com/",
+            },
+            {
+              title: "AllFitnessCalculators.com",
+              desc: "BMR, BMI, calorie burn, and health-focused calculators for training smart.",
+              href: "https://allfitnesscalculators.com/",
+            },
+            {
+              title: "FinanceMapped.com",
+              desc: "Understand money basics and explore finance history in a clear, engaging way.",
+              href: "https://financemapped.com/",
+            },
+            {
+              title: "iLoveColoringPage.com",
+              desc: "Printable coloring pages for relaxation, creativity, and learning fun.",
+              href: "https://ilovecoloringpage.com/",
+            },
+          ].map((site) => (
+            <a
+              key={site.title}
+              href={site.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md"
+            >
+              <h3 className="text-base font-semibold text-slate-900">
+                {site.title}
+              </h3>
+              <p className="mt-2 text-sm text-slate-700">{site.desc}</p>
+              <div className="mt-3 text-xs font-semibold text-sky-600">
+                Visit →
+              </div>
+            </a>
+          ))}
+        </div>
       </section>
 
       {/* FAQ */}
@@ -827,6 +902,19 @@ export default function Home() {
             </a>
           </li>
         </ul>
+      </section>
+
+      {/* Disclaimer Footnote */}
+      <section className="max-w-6xl mx-auto px-6 pb-6">
+        <p className="text-xs text-slate-500 text-center leading-relaxed">
+          <em>
+            All university names and trademarks are owned by their respective
+            institutions. This website is not affiliated with or endorsed by any
+            university. GPA tools are provided for general informational and
+            planning purposes to help students, parents, and educators interpret
+            grading scales and estimate academic standing.
+          </em>
+        </p>
       </section>
 
       {/* JSON-LD Structured Data */}
