@@ -4,12 +4,12 @@ import type { Route } from "./+types/home";
 export const meta: Route.MetaFunction = () => [
   {
     title:
-      "GPA Calculator – Weighted, Unweighted & Cumulative | Free Online Tool",
+      "Instant GPA Calculator – Weighted, Unweighted & Cumulative | No Signup Needed",
   },
   {
     name: "description",
     content:
-      "Free GPA Calculator for high school and college. Instantly compute weighted, unweighted, and cumulative GPA across semesters. Save progress and track results in real time.",
+      "Instantly calculate your weighted or unweighted GPA in seconds. Add semesters, credits, and grades — no signup required. Works for high school and college students worldwide.",
   },
   {
     name: "keywords",

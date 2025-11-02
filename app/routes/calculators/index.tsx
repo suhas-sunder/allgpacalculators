@@ -1,17 +1,21 @@
 import type { Route } from "./+types/index";
 
 export const meta: Route.MetaFunction = () => [
-  { title: "University GPA Calculators | Compare International GPA Systems" },
+  {
+    title:
+      "International GPA Calculator – Convert Grades by Country & University",
+  },
   {
     name: "description",
     content:
-      "Browse GPA calculators by country and university. Includes US, Canada, Australia, UK, Japan and more. Simple tools for converting grades to a 4.0 scale.",
+      "Convert your GPA instantly across global grading systems. Includes U.S., Canada, U.K., Australia, Japan and more. Compare weighted and unweighted scales by university.",
   },
   {
     name: "keywords",
     content:
-      "GPA calculator universities, GPA conversion, international GPA, Canada GPA calculator, Australia GPA calculator, UK GPA conversion, Japan GPA scale, university grade calculator",
+      "international GPA calculator, GPA conversion, global GPA tool, US GPA scale, Canada GPA conversion, UK GPA calculator, Australia GPA tool, Japan GPA system, university GPA comparison",
   },
+
   { name: "robots", content: "index,follow" },
   { name: "theme-color", content: "#f9fafb" },
 
@@ -151,6 +155,15 @@ export default function CalculatorsLanding() {
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
+  };
+
+  const websiteSectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "University GPA Calculators",
+    description:
+      "A collection of GPA calculators and conversion tools organized by country and university.",
+    url: "https://allgpacalculators.com/calculators",
   };
 
   return (
@@ -363,7 +376,7 @@ export default function CalculatorsLanding() {
           href="/"
           className="inline-block rounded-xl bg-sky-500 px-6 py-3 text-white font-semibold text-base shadow hover:bg-sky-600 transition"
         >
-          Use universal GPA calculator
+          Use Universal GPA Calculator → Weighted, Unweighted & Cumulative
         </a>
         <p className="mt-4 text-sm text-slate-500 max-w-lg mx-auto">
           Weighted and unweighted GPA with cumulative and semester tracking
@@ -391,6 +404,12 @@ export default function CalculatorsLanding() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteSectionSchema),
+        }}
       />
 
       {/* Footer (unchanged) */}
