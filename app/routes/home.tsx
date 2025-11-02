@@ -853,6 +853,144 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        id="international"
+        className="max-w-6xl mx-auto px-6 py-16  border-t border-slate-200"
+      >
+        <h2 className="text-3xl font-bold text-center mb-8 text-slate-900">
+          International GPA Conversion Tools
+        </h2>
+
+        <p className="text-slate-700 text-center max-w-3xl mx-auto mb-10">
+          Different countries and universities use grading systems such as WAM,
+          4.33, 10-point, and 100-point scales. Use these conversion tools to
+          translate grades into a U.S. 4.0 GPA scale for global comparison.
+        </p>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+          <a
+            href="/calculators"
+            className="block p-6 border rounded-xl hover:shadow-md transition"
+          >
+            🇦🇺 <strong>WAM to GPA Converter</strong>
+            <p className="text-sm text-slate-600 mt-2">
+              Convert Australian Weighted Average Marks to a 4.0 GPA scale.
+            </p>
+          </a>
+
+          <a
+            href="/calculators"
+            className="block p-6 border rounded-xl hover:shadow-md transition"
+          >
+            🇨🇦 <strong>4.33 GPA Scale (Canada)</strong>
+            <p className="text-sm text-slate-600 mt-2">
+              Convert Canadian university grades to the 4.33 or 4.0 GPA systems.
+            </p>
+          </a>
+
+          <a
+            href="/calculators"
+            className="block p-6 border rounded-xl hover:shadow-md transition"
+          >
+            🇯🇵 <strong>10-Point GPA Calculator</strong>
+            <p className="text-sm text-slate-600 mt-2">
+              Convert 10-point or percentage grades to a 4.0 GPA equivalent.
+            </p>
+          </a>
+
+          <a
+            href="/calculators"
+            className="block p-6 border rounded-xl hover:shadow-md transition"
+          >
+            🌐 <strong>100-Point / Percentage to GPA</strong>
+            <p className="text-sm text-slate-600 mt-2">
+              Convert grades from 100-point scales or percentages into 4.0 GPA.
+            </p>
+          </a>
+
+          <a
+            href="/calculators"
+            className="block p-6 border rounded-xl hover:shadow-md transition"
+          >
+            🎓 <strong>12-Point Scale to GPA</strong>
+            <p className="text-sm text-slate-600 mt-2">
+              Common in Canadian universities. Convert 12-point grades to 4.0 or
+              4.33 GPA.
+            </p>
+          </a>
+
+          <a
+            href="/calculators"
+            className="block p-6 border rounded-xl hover:shadow-md transition"
+          >
+            📈 <strong>GPA Percentage Calculator</strong>
+            <p className="text-sm text-slate-600 mt-2">
+              Convert GPA to percentage or reverse for simplified grade
+              reporting.
+            </p>
+          </a>
+        </div>
+
+        <p className="text-slate-600 text-sm mt-8 max-w-4xl mx-auto text-center">
+          These international GPA tools help students applying abroad or
+          transferring credits between universities that use different grading
+          systems. Whether you’re converting WAM to GPA in Australia or 10-point
+          scales in Japan, the goal is to create a consistent academic
+          comparison.
+        </p>
+      </section>
+
+      <section
+        id="custom-gpa"
+        className="max-w-6xl mx-auto px-6 pt-16 pb-4 border-t border-slate-200"
+      >
+        <h2 className="text-3xl font-bold text-center mb-6 text-slate-900">
+          Custom and Honors GPA Calculations
+        </h2>
+
+        <p className="text-slate-700 text-center max-w-3xl mx-auto mb-10">
+          Some schools offer weighted systems or custom grade multipliers for
+          advanced courses. Use the “Weighted” toggle above to include +0.5 for
+          Honors or +1.0 for AP/IB courses. You can also manually adjust credits
+          and weights to simulate <strong>custom GPA systems</strong> or
+          school-specific scales.
+        </p>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+          <div className="border rounded-xl p-6 bg-white shadow-sm transition">
+            <strong>Honors GPA Calculator</strong>
+            <p className="text-sm text-slate-600 mt-2">
+              Add +0.5 weight for honors classes and see how your GPA improves.
+            </p>
+          </div>
+          <div className="border rounded-xl p-6 bg-white shadow-sm transition">
+            <strong>AP / IB GPA Calculator</strong>
+            <p className="text-sm text-slate-600 mt-2">
+              Use +1.0 bonus for AP or IB courses to calculate advanced GPAs.
+            </p>
+          </div>
+          <div className="border rounded-xl p-6 bg-white shadow-sm transition">
+            <strong>Custom GPA Calculator</strong>
+            <p className="text-sm text-slate-600 mt-2">
+              Set your own grade weights and credits to match unique grading
+              systems.
+            </p>
+          </div>
+        </div>
+        <p className="text-slate-600 text-sm mt-8 max-w-4xl mx-auto text-center">
+          Some Canadian and European institutions use a 12-point grading scale.
+          A grade of 12 typically equals a 4.0 GPA, while 9 corresponds to a B
+          average (3.0). Use the{" "}
+          <a
+            href="/calculators/canada"
+            className="text-sky-600 hover:underline"
+          >
+            Canadian GPA Converter
+          </a>{" "}
+          to map 12-point grades to 4.0 or 4.33 values accurately.
+        </p>
+      </section>
+
       {/* FAQ */}
       <section id="faq" className="max-w-5xl mx-auto py-20">
         <h2 className="text-3xl font-bold text-center mb-8 text-slate-700">
